@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #e60000;
+}
+
+.saudacao h2 {
+  font-size: 20px;
+}
+
+h4 {
+  color: #e60000;
+}
+
+.logout form button {
+  background-color: #e60000;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout form button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Menu */
+nav {
+  background-color: #222;
+  padding: 15px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.menu > li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.menu > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+  display: block;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.menu > li > a:hover {
+  background-color: #e60000;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: #2d2d2d;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+  min-width: 200px;
+  z-index: 100;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #444;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu > li {
+    margin: 10px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu a {
+    padding: 12px 20px;
+  }
+}
+
+  

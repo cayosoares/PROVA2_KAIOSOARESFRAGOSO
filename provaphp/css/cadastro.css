@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 20px;
+    color: #c9302c;
+}
+
+/* Formulário */
+form {
+    background-color: black;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Rótulos */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos de input */
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Botões */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* Botão Cadastrar */
+button[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #219653;
+}
+
+/* Botão Cancelar */
+button[type="reset"] {
+    background-color: #d14036;
+    color: white;
+}
+
+button[type="reset"]:hover {
+    background-color: #a93226;
+}
+
+/* Link Voltar */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #c9302c;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
